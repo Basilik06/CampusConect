@@ -6,6 +6,9 @@
 //
 // Scripts
 // 
+function toggleForms() {
+    document.querySelector('.container').classList.toggle('active');
+}
 
 window.addEventListener('DOMContentLoaded', event => {
 
