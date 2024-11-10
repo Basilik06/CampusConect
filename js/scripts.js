@@ -7,9 +7,11 @@
 // Scripts
 // 
 function toggleForms() {
-    document.querySelector('.container').classList.toggle('active');
+    const loginContainer = document.querySelector('.login-container');
+    const registerContainer = document.querySelector('.register-container');
+    loginContainer.style.display = loginContainer.style.display === 'none' ? 'block' : 'none';
+    registerContainer.style.display = registerContainer.style.display === 'none' ? 'block' : 'none';
 }
-
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
