@@ -12,8 +12,8 @@
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="css/stylesBootstrap.css" rel="stylesheet" />
-    <link href="css/styles_login.css" rel="stylesheet" />
+    <link href="/CampusConect/css/stylesBootstrap.css" rel="stylesheet" />
+    <link href="/CampusConect/css/styles_inicio_cliente.css" rel="stylesheet" />
 </head>
 <body id="page-top" class="masthead">
     <!-- Navigation-->
@@ -28,54 +28,27 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="/CampusConect/index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/CampusConect/index.html">Servicios</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/CampusConect/index.html">Nosotros</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/CampusConect/index.html">Equipo</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/CampusConect/Login.html">Login</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Hoja de vida</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#">Historial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/CampusConect/index.html">Logout</a></li>
                 </ul>
             </div>
         </div>
     </nav>
+<!-------------------------------------------------------------------------->    
     
-    <!-- Contenedor de Login y Registro -->
-    <div class="container form-wrapper" id="login">
-        <!-- Sección de Login -->
-        <div class="form-container login-container">
-            <form action="#">
-                <h2>Login</h2>
-                <input type="email" placeholder="Correo" required />
-                <input type="password" placeholder="Contraseña" required />
-                <div class="recordar">
-                    <label><input type="checkbox" /> Recordar</label>
-                    <a href="#">¿Olvidaste tu contraseña?</a>
-                </div>
-                <button>Login</button>
-                <button><a href="/CampusConect/cliente_html/inicio_cliente.html" style="color: white;">Usuario</a></button>
-                <button><a href="/CampusConect/empresa_html/inicio_empresa.html" style="color: white;">Empresa</a></button>
-                <p>¿No tienes una cuenta? <a href="#" onclick="toggleForms()">Registrarme</a></p>
-            </form>
-        </div>
 
-        <!-- Sección de Registro -->
-        <div class="form-container register-container" style="display:none;">
-            <form action="#">
-                <h2>Registro</h2>
-                <input type="text" placeholder="Nombre" required />
-                <input type="email" placeholder="Correo" required />
-                <input type="password" placeholder="Contraseña" required />
-                <input type="password" placeholder="Validar Contraseña" required />
-                <div class="options">
-                    <label><input type="radio" name="role" /> Estudiante</label>
-                    <label class="text-black" class="separador"> | </label>
-                    <label><input type="radio" name="role" /> Empresa</label>
-                </div>
-                <button>Registrarse</button>
-                <p>¿Ya tienes una cuenta? <a href="#" onclick="toggleForms()">Login</a></p>
-            </form>
-        </div>
+
+<div class="container form-wrapper" id="login">
+        <!--Aqui va el codigo del cuerpo -->
+        <h1>Cliente</h1>
     </div>
 
+
+
+<!-------------------------------------------------------------------------->
     <!-- Footer -->
     <footer class="footer_page">
         <div class="container text-center">

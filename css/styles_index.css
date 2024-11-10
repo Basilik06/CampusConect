@@ -17,10 +17,11 @@
     justify-content: start; /* Alinea la imagen y el texto a la izquierda */
 }
 .about-section .container {
-    background-image: url('assets/img/ipad.png');
+    background-image: url('/CampusConect/assets/img/ipad.png');
     background-size: cover;
     background-position: center;
     padding: 50px;
+    height: 505px;
     border-radius: 8px;
 }
 .servicio img {
@@ -34,7 +35,7 @@
     margin: 0; /* Quita cualquier margen adicional */
 }
 .about-section{
-    height: 700px;
+    height: 665px;
 }
 /* Estilos para la sección de nosotros */
 #nosotros {
