@@ -54,3 +54,146 @@
 }
 /*--------------------------------------------------------------------------*/
 /*Apartir de aqui para abajo va el codigo del css de la pagina en concreto*/
+
+/*BARRA BUSCADOR*/
+.searchbar{
+    width: 100vw;
+    height: 20vh;
+    padding: 10px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+
+#buscador{
+    width: 30vw;
+    padding: 10px;
+    background: #0003;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+    text-align: center;
+}
+
+#buscar{
+    width: 10vw;
+    padding: 10px;
+    background: #000a;
+    border: none;
+    border-bottom: 2px solid #fff;
+    border-radius: 4px;
+    color: #fff;
+}
+#buscar:hover{
+    background: #000;
+}
+/*-----------------------------------------------------------------------------*/
+/*FILTRO*/
+.filter{
+    width: 18vw;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #000, transparent);
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #fff;
+    box-shadow: 0 0 40px 0 #0005;
+}
+
+.select{
+    width: 70%;
+    background: linear-gradient(to top, transparent, #000);
+    color: #fff;
+    border-radius: 10px;
+    padding: 5px;
+}
+.select-value{
+    color: #000;
+}
+
+.filter-content{
+    border-top: 1px solid #fffa;
+    padding: 15px;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+  
+.checkbox-style {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 30px;
+    position: relative;
+}
+
+.checkbox-style::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    background-color: #000;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+input[type="checkbox"]:checked + .checkbox-style::before {
+    background-color: #000;
+    border-color: #48e;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23fff' d='M6 10.828L2.586 7.414l-1.415 1.414L6 13.657l9-9-1.414-1.415z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/*-----------------------------------------------------------------------------*/
+/*OFERTAS*/
+.offers-box{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+    width: 65vw;
+    background: linear-gradient(to bottom, #000, transparent);
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    box-sizing: border-box;
+}
+.offer{
+    padding: 20px;
+    border-bottom: 1px solid #fff;
+    box-sizing: border-box;
+    text-align: center;
+}
+.spacing{
+    height: 60vh;
+    background: #000;
+}
+.sueldo{
+    padding: 0 20%;
+    color: #fff;
+    font-weight: bolder;
+}
+.p-offer{
+    text-align: left;
+}
+h4{
+    padding: 10px 5%;
+}
+button{
+    padding: 10px 30px;
+    border: 1px solid #fff1;
+    border-radius: 10px;
+    margin: 10px;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+}
+button:hover{
+    background: #fff3;
+}
