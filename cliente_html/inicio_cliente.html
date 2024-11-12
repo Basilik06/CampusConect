@@ -8,19 +8,19 @@
         CampusConnect es más que una plataforma; es tu primer paso hacia el éxito profesional" />
     <meta name="author" content="" />
     <title>CampusConect</title>
-    <link rel="icon" type="image/x-icon" href="assets/logo_cc.ico" />
+    <link rel="icon" type="image/x-icon" href="../assets/logo_cc.ico" />
     <!-- Font Awesome icons (free version)-->
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
     <!-- Core theme CSS (includes Bootstrap)-->
-    <link href="/CampusConect/css/stylesBootstrap.css" rel="stylesheet" />
-    <link href="/CampusConect/css/styles_inicio_cliente.css" rel="stylesheet" />
+    <link href="../css/stylesBootstrap.css" rel="stylesheet" />
+    <link href="../css/styles_inicio_cliente.css" rel="stylesheet" />
 </head>
 <body id="page-top" class="masthead">
     <!-- Navigation-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
         <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="/CampusConect/index.html">
-                <img src="/CampusConect/assets/logo_cc.ico" class="logo_menu">Campus Conect
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo_cc.ico" class="logo_menu">Campus Conect
             </a>
             <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                 Menu
@@ -32,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="#">Perfil</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Hoja de vida</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">Historial</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/CampusConect/index.html">Logout</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -42,11 +42,96 @@
 
 
 <div class="container form-wrapper" id="login">
-        <!--Aqui va el codigo del cuerpo -->
-        <h1>Cliente</h1>
+    <!--Aqui va el codigo del cuerpo -->
+    <div class="searchbar">
+        <input type="text" name="buscador" id="buscador" placeholder="Buscador">
+        <input type="submit" name="buscar" id="buscar">
     </div>
+    <div class="filter">
+        <h3>Filtrado</h3>
+        <div class="filter-content">
+            <h2>Categorias</h2>
+            <select class="select" name="categories-menu" id="categories-menu">
+                <option class="select-value" value="tecnologia">Tecnologia</option>
+                <option class="select-value" value="diseño-3D">Diseño 3D</option>
+                <option class="select-value" value="marketing">Marketing</option>
+                <option class="select-value" value="contabilidad">Contabilidad</option>
+                <option class="select-value" value="abogacia">Abogacía</option>
+            </select>
+        </div>
+        <div class="filter-content">
+            <h2>Ubicación</h2>
+            <select class="select" name="country-menu" id="country-menu">
+                <option class="select-value" value="tecnologia">Tecnologia</option>
+                <option class="select-value" value="diseño-3D">Diseño 3D</option>
+                <option class="select-value" value="marketing">Marketing</option>
+                <option class="select-value" value="contabilidad">Contabilidad</option>
+                <option class="select-value" value="abogacia">Abogacía</option>
+            </select>
+        </div>
+        <div class="filter-content">
+            <h2>Modalidad</h2>
+            <select class="select" name="mode-menu" id="mode-menu">
+                <option class="select-value" value="virtual">Virtual</option>
+                <option class="select-value" value="presencial">Presencial</option>
+            </select>
+        </div>
+        <div class="filter-content">
+            <h2>Habilidades</h2>
+            <label>
+                <input type="checkbox" name="java" id="java">
+                <span class="checkbox-style">Java</span>
+            </label>
+            <label>
+                <input type="checkbox" name="c++" id="c++">
+                <span class="checkbox-style">C++</span>
+            </label>
+            <label>
+                <input type="checkbox" name="c#" id="c#">
+                <span class="checkbox-style">C#</span>
+            </label>
+            <label>
+                <input type="checkbox" name="python" id="python">
+                <span class="checkbox-style">Python</span>
+            </label>
+            <label>
+                <input type="checkbox" name="php" id="php">
+                <span class="checkbox-style">PHP</span>
+            </label>
+            <label>
+                <input type="checkbox" name="javascript" id="javascript">
+                <span class="checkbox-style">JavaScript</span>
+            </label>
+            <label>
+                <input type="checkbox" name="marketing" id="marketing">
+                <span class="checkbox-style">Marketing</span>
+            </label>
+            <label>
+                <input type="checkbox" name="abogacia" id="abogacia">
+                <span class="checkbox-style">Abogacía</span>
+            </label>
+        </div>
+    </div>
+    <div class="offers-box">
+        <div class="offer">
+            <h4>Desarrollador Web <span class="sueldo">2'200.000 $</span></h4>
+            <p class="p-offer">Buscamos un desarrollador web talentoso y motivado para unirse a nuestro equipo. Será responsable de diseñar, desarrollar y mantener aplicaciones y sitios web funcionales, atractivos y optimizados para una experiencia de usuario excepcional.</p>
+            <button>Aplicar</button>
+        </div>
+        <div class="offer">
+            <h4>Analista de datos <span class="sueldo">2'200.000 $</span></h4>
+            <p class="p-offer">Buscamos un analista de datos detallista y orientado a resultados para extraer, procesar y analizar información clave que permita a la empresa tomar decisiones estratégicas. Será responsable de transformar datos en conocimiento práctico y generar informes claros y accionables.</p>
+            <button>Aplicar</button>
+        </div>
+        <div class="offer">
+            <h4>Desarrollador Backend <span class="sueldo">2'200.000 $</span></h4>
+            <p class="p-offer">Buscamos un desarrollador backend talentoso para crear, mantener y optimizar los sistemas y servicios que impulsan nuestras aplicaciones. Será responsable de garantizar la escalabilidad, seguridad y funcionalidad del software mientras colabora con otros equipos para cumplir los objetivos del negocio.</p>
+            <button>Aplicar</button>
+        </div>
+    </div>
+</div>
 
-
+<div class="spacing"></div>
 
 <!-------------------------------------------------------------------------->
     <!-- Footer -->
