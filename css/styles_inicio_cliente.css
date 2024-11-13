@@ -171,7 +171,7 @@ input[type="checkbox"]:checked + .checkbox-style::before {
     text-align: center;
 }
 .spacing{
-    height: 60vh;
+    height: 70vh;
     background: #000;
 }
 .sueldo{
@@ -195,5 +195,5 @@ button{
     font-weight: bold;
 }
 button:hover{
-    background: #fff3;
+    background: #fff1;
 }
