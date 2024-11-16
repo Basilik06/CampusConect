@@ -61,8 +61,8 @@
     height: 20vh;
     padding: 10px;
     position: absolute;
-    top: 15%;
-    left: 30%;
+    top: 18vh;
+    left: 30vw;
 }
 
 #buscador{
@@ -77,31 +77,37 @@
 }
 
 #buscar{
-    width: 10vw;
-    padding: 10px;
+    padding: 10px 30px;
     background: #000a;
     border: none;
     border-bottom: 2px solid #fff;
     border-radius: 4px;
     color: #fff;
+    box-sizing: border-box;
 }
 #buscar:hover{
     background: #000;
 }
 /*-----------------------------------------------------------------------------*/
 /*FILTRO*/
+.background{
+    border-radius: 10px;
+    border-bottom: 1px solid #fff6;
+    background: linear-gradient(to bottom, #000, transparent);
+    box-shadow: 0 0 40px 0 #0006;
+}
+
 .filter{
     width: 18vw;
     position: absolute;
-    top: 20%;
-    left: 5%;
-    border-radius: 10px;
-    background: linear-gradient(to bottom, #000, transparent);
+    top: 20vh;
+    left: 5vw;
     text-align: center;
     padding: 10px;
     box-sizing: border-box;
     color: #fff;
-    box-shadow: 0 0 40px 0 #0005;
+    box-shadow: 0 0 40px 0 #0006;
+    font-size: 16px;
 }
 
 .select{
@@ -118,6 +124,8 @@
 .filter-content{
     border-top: 1px solid #fffa;
     padding: 15px;
+    font-size: 1em;
+    margin: 10px 0;
 }
 
 input[type="checkbox"] {
@@ -155,13 +163,12 @@ input[type="checkbox"]:checked + .checkbox-style::before {
 /*OFERTAS*/
 .offers-box{
     position: absolute;
-    top: 30vh;
+    top: 35vh;
     left: 30vw;
     width: 65vw;
-    background: linear-gradient(to bottom, #000, transparent);
-    padding: 10px;
-    border-radius: 10px;
+    padding: 25px;
     color: #fff;
+    box-shadow: 0 0 40px 0 #0006;
     box-sizing: border-box;
 }
 .offer{
@@ -171,7 +178,7 @@ input[type="checkbox"]:checked + .checkbox-style::before {
     text-align: center;
 }
 .spacing{
-    height: 70vh;
+    height: 800px;
     background: #000;
 }
 .sueldo{
@@ -181,6 +188,9 @@ input[type="checkbox"]:checked + .checkbox-style::before {
 }
 .p-offer{
     text-align: left;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
 }
 h4{
     padding: 10px 5%;
@@ -196,4 +206,57 @@ button{
 }
 button:hover{
     background: #fff1;
+}
+
+.see-offer{
+    width: 80vw;
+    position: absolute;
+    top: 20vh;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.offer-title{
+    width: 50vw;
+    margin: auto;
+    margin-bottom: 70px;
+    background: #0009;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 #0006;
+    padding-left: 30px;
+}
+.offer-description{
+    width: 40vw;
+    position: absolute;
+    left: 10%;
+    padding: 20px;
+}
+.offer-info{
+    width: 18vw;
+    position: absolute;
+    top: 15vh;
+    right: 5vw;
+    text-align: center;
+    padding: 15px;
+    box-sizing: border-box;
+    color: #fff;
+    box-shadow: 0 0 40px 0 #0006;
+    font-size: 16px;
+    margin-top: 30px;
+}
+.offer-info-content{
+    padding: 20px 5px;
+    border-top: 1px solid #fff6;
+}
+textarea{
+    width: 100%;
+    resize: none;
+    background: #000;
+    border: 1px solid #fff2;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #fff;
+    margin: 20px 0;
 }
