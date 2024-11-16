@@ -14,6 +14,7 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="../css/stylesBootstrap.css" rel="stylesheet" />
     <link href="../css/styles_inicio_cliente.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../css/styles_perfil_cliente.css">
 </head>
 <body id="page-top" class="masthead">
     <!-- Navigation-->
@@ -39,11 +40,51 @@
     </nav>
 <!-------------------------------------------------------------------------->    
 
-<div class="container form-wrapper" id="login">
-    
-</div>
-
-<div class="spacing"></div>
+    <div class="spacing">
+        <div class="container form-wrapper" id="login">
+            <div class="form-container">
+                <form action="">
+                    <div class="form-input edit-perfil-pic">
+                        <img class="perfil-pic" src="../assets/img/perfil-pic.png" alt="">
+                    </div>
+                    <div class="form-input edit-perfil-pic">
+                        <span>John Doe</span>
+                    </div>
+                    <div class="form-input">
+                        <label for="tel">Teléfono</label>
+                        <input class="input-info" type="tel" name="tel" id="tel" placeholder="3114536127" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="correo">Correo electrónico</label>
+                        <input class="input-info" type="email" name="correo" id="correo" placeholder="example@gmail.com" required>
+                    </div>
+                    <div class="form-input">
+                        <label for="ciudad">Ciudad</label>
+                        <select class="input-info" name="ciudad" id="ciudad">
+                            <option value="bquilla">Barranquilla</option>
+                            <option value="bmanga">Bucaramanga</option>
+                            <option value="bogota">Bogotá</option>
+                            <option value="cali">Cali</option>
+                            <option value="cucuta">Cúcuta</option>
+                            <option value="cartagena">Cartagena</option>
+                            <option value="medellin">Medellin</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="idiomas">Idiomas</label>
+                        <textarea rows="3" maxlength="200" placeholder="Ingles B2" id="idiomas"></textarea>
+                    </div>
+                    <div class="form-input">
+                        <label for="university">Certificados</label>
+                        <input class="input-info" type="file">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="form-input edit-perfil-pic">
+            <a href="hoja_de_vida.html"><button>Guardar</button></a>
+        </div>
+    </div>
 
 <!-------------------------------------------------------------------------->
     <!-- Footer -->
