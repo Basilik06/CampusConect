@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="La plataforma que te conecta con el mundo profesional desde tus primeros pasos. 
+        Accede a ofertas de empleo y mantente al día con las mejores oportunidades para tu carrera. 
+        CampusConnect es más que una plataforma; es tu primer paso hacia el éxito profesional" />
+    <meta name="author" content="" />
+    <title>CampusConect</title>
+    <link rel="icon" type="image/x-icon" href="../assets/logo_cc.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../css/stylesBootstrap.css" rel="stylesheet" />
+    <link href="../css/styles_inicio_cliente.css" rel="stylesheet" >
+    <link href="../css/styles_perfil_cliente2.css" rel="stylesheet" />
+</head>
+<body id="page-top" class="fondoBody">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" >
+        <div class="container px-4 px-lg-5" >
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/logo_cc.ico" class="logo_menu">Campus Conect
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="inicio_cliente.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hoja_de_vida.html">Hoja de vida</a></li>
+                    <li class="nav-item"><a class="nav-link" href="historial.html">Historial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-------------------------------------------------------------------------->    
+
+
+<div class="spacing">
+    <div class="container form-wrapper" id="login">
+        <div class="form-container">
+            <form action="">
+                <h2 id="perfil-h2">Información personal</h2>
+                <div class="form-input">
+                    <label for="name">Nombre completo</label>
+                    <input class="input-info" type="text" name="name" id="name" placeholder="John Doe" required>
+                </div>
+                <div class="form-input">
+                    <label for="correo">Correo electrónico</label>
+                    <input class="input-info" type="email" name="correo" id="correo" placeholder="example@gmail.com" required>
+                </div>
+                <div class="form-input">
+                    <label for="university">Universidad</label>
+                    <input class="input-info" type="text" name="university" id="university" value="Universidad Simon Bolivar" disabled>
+                </div>
+                <div class="form-input">
+                    <label for="carrera">Carrera</label>
+                    <select class="input-info" name="carrera" id="carrera">
+                        <option value="ing-sistemas">Ing. Sistemas</option>
+                        <option value="ing-multimedia">Ing. Multimedia</option>
+                        <option value="ing-mecanica">Ing. Mecánica</option>
+                        <option value="ing-industrial">Ing. Industrial</option>
+                        <option value="fisioterapia">Fisioterapia</option>
+                        <option value="psicologia">Psicología</option>
+                        <option value="derecho">Derecho</option>
+                        <option value="trabajo social">Trabajo social</option>
+                    </select>
+                </div>
+                <div class="form-input">
+                    <label for="ciudad">Ciudad</label>
+                    <select class="input-info" name="ciudad" id="ciudad">
+                        <option value="bquilla">Barranquilla</option>
+                        <option value="bmanga">Bucaramanga</option>
+                        <option value="bogota">Bogotá</option>
+                        <option value="cali">Cali</option>
+                        <option value="cucuta">Cúcuta</option>
+                        <option value="cartagena">Cartagena</option>
+                        <option value="medellin">Medellin</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <div class="form-input edit-perfil-pic">
+                    <img class="perfil-pic" src="../assets/img/equipo.jpeg" alt="">
+                </div>
+                <div class="form-input edit-perfil-pic">
+                    <button>Subir foto</button>
+                </div>
+                <div class="form-input">
+                    <label for="tel">Teléfono</label>
+                    <input class="input-info" type="tel" name="tel" id="tel" placeholder="3114536127" required>
+                </div>
+                <div class="form-input">
+                    <label for="university">Descripción personal</label>
+                    <textarea rows="5" maxlength="200" name="personal-description" id="personal-description"></textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="form-input edit-perfil-pic">
+        <a href="perfil.html"><button>Actualizar perfil</button></a>
+    </div>
+</div>
+
+<!-------------------------------------------------------------------------->
+    <!-- Footer -->
+    <footer class="footer_page">
+        <div class="container text-center">
+            <p class="footer-text">&copy; CampusConect 2024. Todos los derechos reservados.</p>
+            <div class="footer-links">
+                <a href="#servicios" class="footer-link">Servicios</a> |
+                <a href="#nosotros" class="footer-link">Nosotros</a> |
+                <a href="#equipo" class="footer-link">Equipo</a>
+            </div>
+            <div class="social-icons">
+                <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- SB Forms JS-->
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>
