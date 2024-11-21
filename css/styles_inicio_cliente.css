@@ -168,7 +168,7 @@ input[type="checkbox"]:checked + .checkbox-style::before {
     width: 65vw;
     padding: 25px;
     color: #fff;
-    box-shadow: 0 0 40px 0 #0006;
+    box-shadow: 0 0 40px 0 #111;
     box-sizing: border-box;
 }
 .offer{
