@@ -53,7 +53,7 @@
 }
 
 button {
-    background-color: #000;
+    background-color: #66f;
     color: white;
     border: 1px solid #fff1;
     padding: 8px 20px;
@@ -62,7 +62,7 @@ button {
 }
 
 button:hover {
-    background-color: #222;
+    background-color: #66f9;
 }
 .spacing-historial{
     height: 500px;
