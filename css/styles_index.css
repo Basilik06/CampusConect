@@ -16,14 +16,8 @@
     align-items: center;
     justify-content: start; /* Alinea la imagen y el texto a la izquierda */
 }
-.about-section .container {
-    background-image: url('/CampusConect/assets/img/ipad.png');
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    height: 505px;
-    border-radius: 8px;
-}
+
+
 .servicio img {
     width: 100%;
     max-width: 60px;

@@ -1,0 +1,84 @@
+/* Fondo general */
+body {
+    background-color: #11111172;
+    font-family: 'Arial', sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Contenedor del formulario */
+.card {
+    margin: 100px auto; /* Baja el cuadro */
+    max-width: 600px;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border: none;
+}
+
+/* Encabezado */
+.card-header {
+    background: #333;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Campos de formulario */
+.form-label {
+    font-weight: bold;
+    color: #ccc;
+}
+
+.form-control, .form-select {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+    border-color: #007bff;
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Botón Guardar */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    box-shadow: 0px 8px 15px rgba(0, 123, 255, 0.5);
+    transform: none; /* Sin desplazamiento */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .card-header {
+        font-size: 1.2rem;
+    }
+    .btn-primary {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+}

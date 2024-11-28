@@ -1,0 +1,156 @@
+.div-banner{
+    background: #000c;
+    border-radius: 10px;
+    position: absolute;
+    top: 20vh;
+    box-shadow: 0 0 40px 0 #0008;
+    padding: 0 20px;
+}
+.banner-unisimon{
+    width: 70vw;
+    height: 20vh;
+}
+
+.div-foto-name{
+    width: 90vw;
+    background: linear-gradient(to bottom, #000, transparent);
+    position: absolute;
+    top: 50vh;
+    border-radius: 20px;
+    font-weight: bolder;
+    box-shadow: 0 0 40px 0 #0001;
+}
+.perfil-pic{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 1% 15%;
+}
+
+.name{
+    position: absolute;
+    top: 5vh;
+    left: 40vw;
+    font-size: 1em;
+}
+
+.descripcion-personal{
+    position: absolute;
+    top: 80vh;
+    left: 10vw;
+    width: 45vw;
+    margin-top: 50px;
+    box-shadow: 0 0 40px 0 #0001;
+}
+.my-info{
+    position: absolute;
+    top: 80vh;
+    right: 10vw;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 0 40px 0 #0001;
+}
+.edit-profile{
+    position: absolute;
+    top: 150vh;
+    left: 30vw;
+}
+#btn-edit-profile{
+    width: 200px;
+    padding: 10px 30px;
+    box-shadow: 0 0 40px 0 #fff1;
+}
+
+/* Configuración de la cuadrícula */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px; /* Espacio entre elementos */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grid-item {
+    text-align: center; /* Centra contenido dentro de cada celda */
+}
+
+.perfil-pic {
+    width: 100px; /* Tamaño de las imágenes */
+    height: 100px;
+    border-radius: 50%; /* Imagen circular */
+    object-fit: cover; /* Ajusta imagen al tamaño */
+    margin-bottom: 10px;
+}
+
+.btn-upload {
+    background-color: #000; /* Color del botón */
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-upload:hover {
+    background-color: #ff5722; /* Color al pasar el cursor */
+}
+
+
+.form-container{
+    width: 40vw;
+    background: #111;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: 100px;
+}
+#perfil-h2{
+    text-align: center;
+    margin: 20px 0 30px 0;
+    font-size: 1.7em;
+    color: #fff;
+}
+.input-info{
+    width: 100%;
+    background: transparent;
+    padding: 6px 10px;
+    border: 1px solid #fff1;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin: 10px 0;
+    color: #fff;
+}
+.form-input{
+    margin: 10px 0;
+}
+.edit-perfil-pic{
+    text-align: center;
+}
+.margenboton{
+    margin-top: px;
+    margin-bottom: 1px;
+}
+
+.spacing{
+
+    background-image: url("/assets/img/contactCampus.png");
+    background-color: #141617;
+    color: #fff;
+    padding: 50px;
+}
+
+
+fieldset{
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: 30px 0;
+    box-sizing: border-box;
+}
+option{
+    background: #000e;
+}
