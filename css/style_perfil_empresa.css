@@ -3,9 +3,7 @@
     border-radius: 10px;
     position: absolute;
     top: 20vh;
-    box-shadow: 0 0 40px 0 #0008;
-    padding: 0 20px;
-    width: 90%;
+    box-shadow: 0 0 40px 0 #0008;  
 }
 .banner-unisimon{
     width: 80vw;
@@ -31,7 +29,7 @@
 .name{
     position: absolute;
     top: 5vh;
-    left: 40vw;
+    left: 30vw;
     font-size: 1em;
 }
 
@@ -62,7 +60,24 @@
 #btn-edit-profile{
     width: 200px;
     padding: 10px 30px;
-    box-shadow: 0 0 40px 0 #fff1;
+    box-shadow: 0 0 40px 0 rgba(120, 69, 175, 0.699);
+    position: absolute;
+    top: 60px;
+    background-color: #4F4FB5;
+}
+.slogan-text {
+    position: absolute;
+    top: 490px; /* Ajusta según tu diseño */
+    width: 91%; /* Asegura que el texto quede centrado */
+    text-align: center;
+    font-size: 1.2em; /* Tamaño reducido */
+    color: #fff;
+    font-weight: bold;
+    background: linear-gradient(90deg, #6a11cb, #2575fc); /* Gradiente violeta */
+    padding: 10px 5px; /* Espaciado interno reducido */
+    border-radius: 10px; /* Esquinas más pequeñas */
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Sombra más sutil */
+    z-index: 2; /* Asegura que esté al frente */
 }
 
 

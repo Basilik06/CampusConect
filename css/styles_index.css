@@ -33,9 +33,63 @@
 }
 /* Estilos para la sección de nosotros */
 #nosotros {
-    padding: 50px 0; /* Ajusta este valor para cambiar el espacio superior e inferior */
-    min-height: 400px; /* Puedes cambiar la altura mínima de la sección */
+   
+    min-height: 400px;
 }
+/* Estilo para la sección de "Nosotros" */
+.nosotros-section {
+    margin-top: 20px; /* Agrega espacio adicional arriba */
+    padding-top: 300px; /* Asegura que haya suficiente espacio en la parte superior */
+}
+
+/* Ajuste adicional si es necesario */
+@media (max-width: 992px) {
+    .nosotros-section {
+        margin-top: 30px; /* Más espacio en pantallas más pequeñas */
+    }
+}
+.mission-section, .vision-section {
+    padding: 30px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.mission-section:hover, .vision-section:hover {
+    background-color: #333;
+    color: white;
+    transform: scale(1.05); /* Aumenta un poco el tamaño al pasar el cursor */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}
+
+.mission-section h4, .vision-section h4 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.mission-section p, .vision-section p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.mission-section:hover h4, .vision-section:hover h4 {
+    color: #fff; /* Cambia el color del título al pasar el cursor */
+}
+
+.mission-section:hover p, .vision-section:hover p {
+    color: #ddd; /* Cambia el color del texto */
+}
+
+/* Para dispositivos pequeños */
+@media (max-width: 768px) {
+    .mission-section, .vision-section {
+        margin-bottom: 20px;
+    }
+}
+
 
 .equipo h2 {
     color: #333;
@@ -57,56 +111,97 @@
     max-width: 800px;
     margin: 0 auto;
 }
-/* Estilos para la sección del equipo con imagen de fondo y capa oscura */
+/* General styling */
 .team-section {
-    position: relative;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.182) 75%, #000 100%), url("../assets/img/bg-masthead.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding: 80px 0; /* Ajusta el espacio superior e inferior */
-    min-height: 665px; /* Controla el tamaño mínimo de la sección */
-    color: #0000005f;
-
-}
-
-.team-section .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Capa negra con transparencia */
-    z-index: 1;
-}
-
-.team-section .container {
-    position: relative;
-    z-index: 2; /* Asegura que el contenido esté encima de la capa oscura */
-}
-
-.team-section h2 {
-    color: #ffffff;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-}
-
-.team-member {
+    padding: 60px 20px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%), url("../assets/img/contactCampus.png");
+    background-color: #1e2326; /* Color de respaldo si la imagen no carga */
+    background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    color: #fff;
     text-align: center;
 }
 
-.team-member img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+.team-member .slogan {
+    font-size: 0.9rem;
+    color: #ccc;
+    font-style: italic;
+    margin-top: 5px;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3); /* Añade un poco de sombra para destacar */
 }
 
-.team-name {
-    color: #ffffff;
-    font-weight: bold;
-    margin-top: 10px;
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: 700;
+    color: #fff;
 }
+
+/* Grid layout for the team */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 20px; /* Menos espacio entre tarjetas */
+    justify-items: center;
+}
+
+/* Team member card */
+.team-member {
+    background: #1c1c1c; /* Fondo de la tarjeta */
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+    padding: 20px; /* Reducido para que las tarjetas no sean tan grandes */
+    width: 250px; /* Reducido el tamaño de la tarjeta */
+    height: 310px; /* Ajustada la altura */
+}
+
+.team-member img {
+    width: 120px; /* Reducido el tamaño de la imagen */
+    height: 120px; /* Reducido el tamaño de la imagen */
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px; /* Menos margen */
+    border: 5px solid #6a11cb; /* Borde degradado */
+}
+
+.team-member h3 {
+    font-size: 1.5rem; /* Tamaño de texto más pequeño */
+    margin-bottom: 8px; /* Menos espacio */
+    font-weight: 600;
+    color: #fff;
+}
+
+.team-member p {
+    font-size: 0.9rem; /* Texto más pequeño */
+    color: #aaa;
+}
+
+/* Hover effect */
+.team-member:hover {
+    transform: translateY(-8px); /* Menos movimiento al hacer hover */
+    box-shadow: 0px 12px 18px rgba(0, 0, 0, 0.4); /* Menos sombra */
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr); /* Cambia a 2 columnas en pantallas medianas */
+    }
+}
+
+@media (max-width: 576px) {
+    .team-grid {
+        grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+    }
+}
+
+
+
+
 .footer_page {
     background-color: #000; /* Color de fondo del footer */
     color: rgba(255, 255, 255, 0.7); /* Color del texto con opacidad */
